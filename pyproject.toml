@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "code-diagnostics-core"
+version = "0.1.0"
+description = "Local and evidence-based repository diagnostics."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+diagnostics = "diagnostics.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=9.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
