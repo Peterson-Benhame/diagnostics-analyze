@@ -4,9 +4,9 @@
 
 - ID: F002 — Workflow de desenvolvimento assistido por IA
 - Diretório: `.specs/features/f002-ai-workflow/`
-- Estágio: Verify
-- Último commit validado: `a6e30b1` — gates de retomada e avaliação documentados
-- Próximo passo: executar a revisão independente da F002; repetir a instalação das skills quando o catálogo do marketplace estiver acessível.
+- Estágio: Verify (bloqueado pela falha de baseline da F001)
+- Último commit validado: `c46abe3` — achados da revisão independente corrigidos
+- Próximo passo: corrigir a ordenação limitada da F001; a instalação local das skills pode ser repetida quando o catálogo do marketplace estiver acessível.
 
 ## Pendência conhecida
 

@@ -30,6 +30,12 @@ def test_state_references_feature_directory_with_required_artifacts() -> None:
     assert (feature_directory / "validation.md").is_file()
 
 
+def test_state_does_not_list_completed_review_as_next_step() -> None:
+    state = (PROJECT_ROOT / ".specs/STATE.md").read_text(encoding="utf-8")
+
+    assert "Próximo passo: executar a revisão independente" not in state
+
+
 def test_agent_entrypoint_requires_state_active_feature_and_validation() -> None:
     agent_instructions = (PROJECT_ROOT / "AGENTS.md").read_text(encoding="utf-8")
 
